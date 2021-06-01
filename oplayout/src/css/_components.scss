@@ -1,0 +1,321 @@
+/*
+Table of content::
+01. Table
+*/
+
+
+//Button
+
+[class^='btn_'].sm{
+  padding: .5rem 1rem;
+}
+
+a[class^='btn_'],[class^='btn_'] {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border-radius: 1px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.109);
+  line-height: 120%;
+  color: var(--light-color);
+  transition: all .3s var(--e-out-quad);
+  &:hover,&:active,&:focus {
+    opacity: .8;
+    // background: transparent;
+    // color: currentColor;
+  }
+}
+[class^='btn_outline-']{
+  background: transparent;
+  &:hover,&:active,&:focus {
+    color: inherit;
+  }
+}
+
+
+[class^='btn_'].lg{
+  padding: 1rem 2.25rem;
+}
+
+.btn_primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn_success {
+  color: var(--light-color);
+  border-color: var(--success-color);
+  background: var(--success-color);
+}
+
+.btn_danger {
+  color: var(--light-color);
+  border-color: var(--danger-color);
+  background: var(--danger-color);
+}
+
+.btn_warning {
+  color: var(--light-color);
+  border-color: var(--warning-color);
+  background: var(--warning-color);
+}
+
+.btn_info {
+  color: var(--light-color);
+  border-color: var(--info-color);
+  background: var(--info-color);
+}
+
+
+.btn_dark {
+  color: var(--light-color);
+  border-color: var(--dark-color);
+  background: var(--dark-color);
+}
+
+.btn_light {
+  color: var(--dark-color);
+  border-color: var(--light-color);
+  background: var(--light-color);
+}
+
+.btn_outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn_outline-success {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.btn_outline-danger {
+  border-color: var(--danger-color);
+  color: var(--danger-color);
+}
+
+.btn_outline-warning {
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+.btn_outline-info {
+  border-color: var(--info-color);
+  color: var(--info-color);
+}
+
+.btn_outline-dark {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+
+.btn_outline-light {
+  border-color: var(--light-color);
+  color: var(--dark-color);
+}
+//01:Table
+
+.op_table{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    tr {
+        padding: 1rem;
+        td,th {
+            border: rgba(170, 170, 170, 0.61) 1px solid;
+            padding: 8px;
+            text-align: inherit;
+            text-align: -webkit-match-parent;
+        }
+    }
+}
+
+//02: Mark
+
+  .mark,mark {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: .3rem;
+    border-radius: .3rem;
+    display: inline-block;
+  }
+  input,textarea,select {
+    outline: 0;
+    height: 2.5rem;
+    padding: 0 1rem;
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+    appearance: none;
+    border: 1px solid #dbdde0;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  textarea {
+    resize: vertical;
+    padding: 1rem;
+    height: auto;
+  }
+  select,button {
+    text-transform: none;
+  }
+  select::marker {
+    color: #000;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+//03: Card
+  .op_card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+    .card_img {
+        img{
+            width: 100%;
+        }
+    }
+    .card_content {
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+    }
+  }
+
+  .card {
+    padding: .875rem;
+    box-shadow: var(--shadow)!important;
+  }
+
+  //Navbar
+  
+.nav_bar{
+  width: 100%;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.09);
+  padding: 1rem 0;
+  transition: all .4s ease-in;
+  z-index: 999;
+  .nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  // &.scroll-header {
+  //   position: fixed;
+  //   top: 0;
+  // }
+}
+.autohide{
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+/*-------Toggler
+*/
+.nav_toggler{
+  display: none;
+  cursor: pointer;
+}
+/*-------Navicon
+*/
+.nav_icon{
+  background: url("https://img.icons8.com/ios/72/menu--v1.png") no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+
+.nav_toggler.close .nav_icon{
+  background: url("https://img.icons8.com/fluent-systems-regular/2x/delete-sign.png") no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+
+//Navigation
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .menu{
+      display: flex;
+      list-style: none!important;
+      margin: 0;
+      padding: 0;
+      .nav_item{
+          text-align: center;
+          .nav_link{
+              padding: .6rem 1rem;
+              text-decoration: none;
+              color: rgba(0, 0, 0, 0.726);
+              font-weight: 500;
+              text-transform: capitalize;
+              font-size: 1rem;
+              cursor: pointer;
+              &:hover{
+                  color: #000;
+              }
+          }
+      }
+  }
+}
+//NavBar media 
+@media (max-width:991px) {
+  .nav_toggler{
+      display: block;
+  }
+
+  .navigation{
+      flex-basis: 100%;
+      flex-grow: 1;
+      flex-direction: column;
+      overflow: hidden;
+      height: 0;
+      .menu{
+          flex-direction: column;
+          .nav_item{
+              line-height: 2;
+          }
+      }
+      &.active{
+          overflow: visible;
+          height: 100%;
+      }
+  }
+}

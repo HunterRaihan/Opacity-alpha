@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="title" content="Documentation - OpacityCss">
+    <meta name="description" content="Opacity.css is a modern responsive CSS framework based on Grid.">
+    <meta name="keywords" content="css, w3css,html,css3,html5,framework,opacity,icon,frameworks,webbuilder.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="15 days">
+    <meta name="author" content="opacity authors">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="https://opicons.vercel.app/manifest/icon-192x192.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-tomorrow.css">
+        <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="nav_bar autohide">
+        <div class="container_full">
+            <nav class="nav">
+                <a href="#" class="logo"><img style="width: 140px;" src="https://opicons.vercel.app/assets/image/logo1.png" alt=""></a>
+
+                <div class="nav_toggler"><span class="nav_icon"></span></div>
+
+                <div class="navigation">
+                    
+                    <div class="search_bar g_center">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                    </div>
+
+                    <ul class="menu">
+                      <li class="nav_item">
+                        <a href="#0" class="nav_link active">Docs</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#0" class="nav_link">Version</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="#0" class="nav_link">Latest</a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container_full">
+            <article class="o_grid ai_str">
+                <aside class="side_bar col_xs-12 col_sm-4 col_md-3 col_lg-2">
+                    <div class="side_bar-main">
+                        <ul class="side_bar-nav">
+                            <li><span class="doc_link active"  onclick="openLink(event, 'line1')" >Introduction</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line2')" >Download</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line3')">Layouts</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line4')">Content</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line5')">Components</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line6')">Helper</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line7')">Utilities</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line8')">Extended</span></li>
+                            <li><span class="doc_link" onclick="openLink(event, 'line9')">Ui & UX <span class="color_success fw_1 op-slack"></span></span></li>
+                            <li><span class="doc_link" onclick="openlink(event, 'line10')">About</span></li>
+                        </ul>
+                    </div>
+                </aside>
+                <section class="main_content col_xs-12 col_sm-8 col_md-9 col_lg-10" id="searchTable">
+        
+                    <section id="line1" class="introduction py_12 tabcontent open">
+                        <div class="main py-8 tac">
+                            <h2 class="py-3">Getting Started <span class="color_warning h6">Alpha v1</span></h2>
+                            <p class="my-4 lh_2">option for your need. Now you should add the main file of the Opacity <br> and the CSS Reset in the header of your
+                                project.
+                                Just that!</p>
+                            <a href="#" class="btn_success lg">Download Opacity <span class="op-download"></span></a>
+                        </div>
+                       
+                        <div class="details">
+                            <h4 class="title" id="Quick_start">Quick start<a href="#Quick_start">  <span class="op-link-2"></span></a></h4>
+                            <p>Looking to quickly add to your project? Use jsDelivr, a free open source CDN. Using a package manager or
+                            need to download the source files? Head to the downloads page.</p>
+                        </div>
+        
+                        <div class="details">
+                            <h4 class="title" id="CSS">CSS<a href="#CSS"> <span class="op-link-2"></span></a></h4>
+                            <p>Copy-paste the stylesheet
+                                <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> before all other stylesheets to load our CSS.
+                            </p>
+                            <pre class="language-html">
+    <code>
+        &lt;link href="https://cdn.jsdelivr.net/npm/opacity-alpha/dist/css/opacity.min.css" rel="stylesheet" &gt;</code>
+                            </pre>
+                        </div>
+        
+                        <div class="details">
+                            <h4 class="title" id="JS">JS<a href="#JS"> <span class="op-link-2"></span></a></h4>
+                            <p>Many of our components require the use of JavaScript to function. Specifically, they require &lt;script&gt;s near the end of your pages, right before the closing &lt;/body&gt; tag, to enable them.</p>
+                            <pre class="language-html">
+    <code>
+        &lt;link href="https://cdn.jsdelivr.net/npm/opacity-alpha/dist/css/opacity.min.css" rel="stylesheet" &gt;</code>
+                            </pre>
+                        </div>
+        
+                        <div class="details">
+                            <h4 class="title" id="Bundle">Bundle<a href="#Bundle"> <span class="op-link-2"></span></a></h4>
+                            <p></p>
+                        </div>
+        
+                        <div class="details">
+                            <h4 class="title" id="Included">What's included<a href="#Included"> <span class="op-link-2"></span></a></h4>
+                            <p>Once downloaded, extract the compressed folder to see the main file in the uncompressed and minified version..</p>
+                            <pre class="language-html" >
+                                <code>
+                                    Opacity/
+                                    ├── dist/
+                                    │ ├── opacity.css
+                                    │ └── opacity.min.css
+                                    ├── example.html
+                                    ├── license
+                                    └── readme.md
+                                </code>
+                            </pre>
+                        </div>
+        
+                        <div class="details d_none">
+                            <h4 class="title" id="Starter_template">Starter template<a href="#Starter_template"> <span class="op-link-2"></span></a></h4>
+                            <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype
+                            and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like
+                            this:</p>
+        
+                            <pre class="language-html" >
+                                <code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        
+        &lt;head&gt;
+        &lt;!-- Required meta tags --&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        
+        &lt;!-- Bootstrap CSS --&gt;
+        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"&gt;
+        
+        &lt;title&gt;Hello, world!&lt;/title&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        
+        &lt;!-- Optional JavaScript; choose one of the two! --&gt;
+        
+        &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"&gt;&lt;/script&gt;
+        
+        &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
+        &lt;!--
+        &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"&gt;&lt;/script &gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"&gt;&lt;/script&gt;
+        --&gt;
+        &lt;/body&gt;
+        
+        &lt;/html&gt;
+                                </code>
+                            </pre>
+                            
+                        </div>
+        
+                        <div class="details d_none">
+                            <h4 class="title" id="Community">Community<a href="#Community"> <span class="op-link-2"></span></a></h4>
+                            <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
+        
+                            <ul>
+                                <li class="h5 lh_2">Follow @getbootstrap on Twitter.</li>
+                                <li class="h5 lh_2">Read and subscribe to The Official Bootstrap Blog.</li>
+                                <li class="h5 lh_2">Join the official Slack room.</li>
+                                <li class="h5 lh_2">You can also follow @getbootstrap on Twitter for the latest gossip and awesome music videos.</li>
+                            </ul>
+                        </div>
+                        <div class="details"><h4 class="title" id="Quick_start">Quick start<a href="#Quick_start"> <span class="op-link-2"></span></a></h4></div>
+                        <div class="details"><h4 class="title" id="Quick_start">Quick start<a href="#Quick_start"> <span class="op-link-2"></span></a></h4></div>
+                        <div class="details"><h4 class="title" id="Quick_start">Quick start<a href="#Quick_start"> <span class="op-link-2"></span></a></h4></div>
+                        <div class="details"><h4 class="title" id="Quick_start">Quick start<a href="#Quick_start"> <span class="op-link-2"></span></a></h4></div>
+                    </section>
+        
+        
+                    <div id="line2" class="py_4 tabcontent">
+                        <div class="details">
+                            <h3>Download</h3>
+                            <p class="lh_2">Download Opacity to get the compiled CSS and JavaScript, source code, or include it with your favorite package</p>
+        
+                            <h4 class="title" id="Compiled_CSS_and_JS">Compiled CSS and JS<a href="#Compiled_CSS_and_JS"> <span class="op-link-2"></span></a></h4>
+                            <p> Download ready-to-use compiled code for Opacity v4.0.0 to easily drop into your project, which includes:</p>
+                            
+                            <p>Compiled and minified CSS bundles (see CSS files comparison)
+                            Compiled and minified JavaScript plugins
+                            This doesn’t include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).</p>
+                            
+                            <h4 class="title" id="Source_files">Source files<a href="#Source_files"> <span class="op-link-2"></span></a></h4>
+                            <p>Compile Opacity with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This
+                            option requires some additional tooling:</p>
+                            <a href="#" class="btn btn-success sm my-3">Download Source</a>
+                            <div class="p">Sass compiler (Libsass or Ruby Sass is supported) for compiling your CSS.
+                            Autoprefixer for CSS vendor prefixing
+                            Should you require build tools, they are included for developing Bootstrap and its docs, but they’re likely unsuitable
+                            for your own purposes.</div>
+        
+                            <a href="#" class="my-4 d_ib">Opacity <span class="op-link"></span></a>
+                        </div>
+                    </div>        
+        
+                    <div id="line3" class="py_4 tabcontent">
+                            <h3>Layouts</h3>
+                            
+                        <div class="details">
+                            <h4 class="title" id="Containers">Containers<a href="#Containers">  <span class="op-link-2"></span></a></h4>
+                            <p>The container class sets the max-width of an element to match the min-width of the current breakpoint. This is useful if you’d prefer to design for a fixed set of screen sizes instead of trying to accommodate a fully fluid viewport. Containers are the most basic layout element. Containers are used to contain, pad, and (sometimes) center the content within them.</p>
+                            
+                            <h5>Opacity comes with 2 different containers:</h5>
+                            
+                            <ul class="lstyle_roman lh_3">
+                                <li><mark>.container</mark>, which sets a max-width at each responsive breakpoint.</li>
+                                <li><mark>.container-full</mark>, which is width: 100% at all breakpoints</li>
+                            </ul>
+        
+                            <table class="op_table mt-5" >
+                                <tr>
+                                    <th></th>
+                                    <th>Extra small &lt;100%</th>
+                                    <th>Small &lt;100%</th>
+                                    <th>Medium &lt;100%</th>
+                                    <th>Large &lt;100%</th>
+                                    <th>Large &gt;82.5rem</th>
+                                </tr>
+                                <tr>
+                                    <td>.container</td>
+                                    <td>100%</td>
+                                    <td>48rem</td>
+                                    <td>62rem</td>
+                                    <td>75rem</td>
+                                    <td>82.5rem</td>
+                                </tr>
+                                <tr>
+                                    <td>.container_full</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details">
+                            <h4 class="title" id="Responsive_breakpoints">Responsive breakpoints<a href="#Responsive_breakpoints">  <span class="op-link-2"></span></a></h4>
+                            <p>Opacity.Css is developed to be mobile first, we use a handful of media queries to create sensible breakpoints for
+                            our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up
+                            elements as the viewport changes.</p>
+                            
+                            <p>We usually uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid
+                            system, and components.</p>
+                            <pre class="language-css">
+                                <code>
+        @media(min-width: 48rem) {
+                // Extra small devices (portrait phones, less than 576px)  
+        }
+        
+        @media(min-width: 62rem) {
+            // Medium devices (tablets, 768px and up)
+        }
+        
+        @media(min-width: 75rem) {
+            // Large devices (desktops, 992px and up)
+        }
+                                </code>
+                            </pre>                            
+                            <p>We occasionally use media queries that go in the other direction (the given screen size or smaller):</p>
+
+                            <pre class="language-css">
+                                <code>
+        // Extra small devices (portrait phones, less than 576px)
+        
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) { ... }
+        
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { ... }
+        
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { ... }
+        
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { ... }
+                                </code>
+                            </pre>
+        
+                            <div class="o_grid g_3 ai_end">
+                                <div class="col_xs-12 col_md-6">
+                                    <p>We occasionally use media queries that go in the other direction (the given screen size or smaller):</p>
+                                    
+                            <pre class="language-css">
+                                <code>
+        // Extra small devices (portrait phones, less than 576px)
+        @media (max-width: 575.98px) { ... }
+        
+        // Small devices (landscape phones, less than 768px)
+        @media (max-width: 767.98px) { ... }
+        
+        // Medium devices (tablets, less than 992px)
+        @media (max-width: 991.98px) { ... }
+        
+        // Large devices (desktops, less than 1200px)
+        @media (max-width: 1199.98px) { ... }</code>
+                            </pre>
+                                </div>
+                                <div class="col_xs-12 col_md-6">
+                                    <p>There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum
+                                        breakpoint widths.</p>
+                    
+                                        <pre class="language-css">
+<code> 
+        // Extra small devices (portrait phones, less than 576px)
+        @media (max-width: 575.98px) { ... }
+        
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) and (max-width: 767.98px) { ... }
+        
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) and (max-width: 991.98px) { ... }
+        
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+        
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { ... }</code>
+                                        </pre>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="details">
+                            <h4 class="title" id="Grid_Layout_System">Grid Layout System <a href="#Grid_Layout_System"><span class="op-link-2"></span></a></h4>
+                            <p>This grid system uses a 12-column grid and is fully responsive. Columns are wrapped within a <mark>.o_grid</mark> class.</p>
+                            <pre class="language-html">
+        <code>
+        &lt;div class="o_grid"&gt;
+            &lt;div class="col_xs-12 col_md-12">1&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>
+                        </div>
+                        <div class="details">
+                            <p>Use <span class="fw_5 color_primary">col_xs-*, col_sm-*, col_md-*, or col_lg-*</span> classes with values 1 through 12 to indicate the number of columns. By default, all columns are the same height.</p>
+                            <img src="./images/grid-layout.PNG" alt="" class="w_100">
+                            <pre class="my_2 language-html">
+        <code>
+        &lt;div class="o_grid"&gt;
+            &lt;div class="col_xs-12 col_md-1">1&lt;/div&gt;
+            ........ 
+            &lt;div class="col_xs-12 col_md-12">12&lt;/div&gt;
+        &lt;/div&gt;</code>
+                                                    </pre>
+                        </div>
+                        <div class="details">
+                            <h3 class="title" id="Order">Order <a href="#Order"><span class="op-link-2"></span></a></h3>
+                            <p>Reorder columns by adding first and last.</p>
+                            <div class="o_grid g_0 border">
+                                <div class="col_xs-12 col_md-3">1</div>
+                                <div class="col_xs-12 col_md-3 order_1">2</div>
+                                <div class="col_xs-12 col_md-3 order_12">3</div>
+                                <div class="col_xs-12 col_md-3">4</div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h3 class="title" id="Alignments">Alignments <a href="#Alignments"><span class="op-link-2"></span></a></h3>
+                            <p>Align columns by adding <mark>.ac_start</mark> , <mark>.ac_center</mark> , <mark>.ac_end</mark> & <mark>.ac_str</mark> And <mark>.ai_start</mark> , <mark>.ai_center</mark> , <mark>.ai_end</mark> & <mark>.ai_str</mark>.</p>
+                            <div class="o_grid g_0 border ai_start my_3">
+                                <div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                                <div class="col_xs-12 col_md-3">2</div>
+                                <div class="col_xs-12 col_md-3">3</div>
+                                <div class="col_xs-12 col_md-3">4</div>
+                            </div>
+                            <pre class="language-html">
+        <code>&lt;div class="o_grid g_0 border ai_start"&gt;
+            &lt;div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">2&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">3&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">4&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>
+
+                            <p>Align columns by adding <mark>.ai_center</mark>.</p>
+                            <div class="o_grid g_0 border ai_center my_3">
+                                <div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                                <div class="col_xs-12 col_md-3">2</div>
+                                <div class="col_xs-12 col_md-3">3</div>
+                                <div class="col_xs-12 col_md-3">4</div>
+                            </div>
+                            <pre class="language-html py_5">
+        <code>&lt;div class="o_grid g_0 border ai_center"&gt;
+            &lt;div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">2&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">3&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">4&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>
+
+                            <p>Align columns by adding <mark>.ai_end</mark>.</p>
+                            <div class="o_grid g_0 border ai_end my_3">
+                                <div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                                <div class="col_xs-12 col_md-3">2</div>
+                                <div class="col_xs-12 col_md-3">3</div>
+                                <div class="col_xs-12 col_md-3">4</div>
+                            </div>
+                            <pre class="language-html py_5">
+        <code>&lt;div class="o_grid g_0 border ai_center"&gt;
+            &lt;div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">2&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">3&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">4&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>
+                            <p>Also work with <mark>.as_start</mark> , <mark>.as_center</mark> , <mark>.as_end</mark> & <mark>.as_str</mark> in children elements.</p>
+                        </div>
+                        <div class="details">
+                            <h3 class="title" id="Justify">Justify <a href="#Justify"><span class="op-link-2"></span></a></h3>
+                            <p>Justify columns by adding <mark>.jc_start</mark> , <mark>.jc_center</mark> , <mark>.jc_end</mark> & <mark>.jc_str</mark> And <mark>.ji_start</mark> , <mark>.ji_center</mark> , <mark>.ji_end</mark> & <mark>.ji_str</mark>.</p>
+                            <div class="o_grid g_0 border jc_start my_3">
+                                <div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</div>
+                                <div class="col_xs-12 col_md-3">2</div>
+                                <div class="col_xs-12 col_md-3">3</div>
+                            </div>
+                            <pre class="language-html">
+        <code>&lt;div class="o_grid g_0 border jc_start"&gt;
+            &lt;div class="col_xs-12 col_md-3">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">2&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">3&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">4&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>
+
+                            <p>Justify columns by adding <mark>.jc_center</mark>.</p>
+                            <div class="o_grid g_0 border ji_center my_3">
+                                <div class="col_xs-12 col_md-3">1</div>
+                                <div class="col_xs-12 col_md-3">2</div>
+                                <div class="col_xs-12 col_md-3">3</div>
+                            </div>
+                            <pre class="language-html py_5">
+        <code>&lt;div class="o_grid g_0 border jc_center"&gt;
+            &lt;div class="col_xs-12 col_md-3">1&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">2&lt;/div&gt;
+            &lt;div class="col_xs-12 col_md-3">3&lt;/div&gt;
+        &lt;/div&gt;</code>
+                            </pre>            
+                            <p>Also works with <mark>.js_start</mark> , <mark>.js_center</mark> , <mark>.js_end</mark> & <mark>.js_str</mark> in children elements.</p>
+                        </div>
+                    </div>
+     
+                    <div id="line4" class="py_4 tabcontent">
+                        <h3>Content</h3>
+
+                        <div class="details">
+                            <h3 class="title" id="Css_Files">Css Files<a href="#Css_Files">  <span class="op-link-2"></span></a></h3>
+                            <p>Opacity includes a handful of options for including some or all of our compiled CSS.</p>
+                            <table class="mt-5 op_table">
+                                <tr>
+                                    <th>CSS</th>
+                                    <th>files</th>
+                                    <th>Layout</th>
+                                    <th>Content</th>
+                                    <th>Components</th>
+                                    <th>Utilities</th>
+                                </tr>
+                                <tr>
+                                    <td>opacity.css<br>
+                                    opacity.min.css</td>
+                                    <td>Included</td>
+                                    <td>Included</td>
+                                    <td>Included</td>
+                                    <td>Included</td>
+                                    <td>Included</td>
+                                </tr>
+                                <tr>
+                                    <td>opacity-layout.css<br>
+                                        opacity-layout.min.css</td>
+                                    <td>Only grid system</td>
+                                    <td>Not included</td>
+                                    <td>Not included</td>
+                                    <td>Not included</td>
+                                    <td>Not included</td>
+                                </tr>
+        
+                                <tr>
+                                    <td>components.css<br>
+                                        components.min.css</td>
+                                    <td>Grid system</td>
+                                    <td>Not included</td>
+                                    <td>Only Reboot</td>
+                                    <td>Included</td>
+                                    <td>Not included</td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                        <div class="details">
+                            <h3 class="title" id="JS_files">JS files<a href="#JS_files">  <span class="op-link-2"></span></a></h3>
+                            <p>Similarly, we have options for including some or all of our compiled JavaScript.</p>
+                            <table class="mt-5 op_table">
+                                <tr>
+                                    <th>Js</th>
+                                    <th>files</th>
+                                    <th>type</th>
+                                </tr>
+                                <tr>
+                                    <td>opacity.js<br>
+                                        opacity.min.js</td>
+                                    <td>Standerd Mandatory Js</td>
+                                    <td>Included</td>
+                                </tr>
+                                <tr>
+                                    <td>op-components.js<br>
+                                        op-components.min.js</td>
+                                    <td>Pure Js</td>
+                                    <td>Included</td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                        <div class="details">
+                            <h3 class="title" id="">Quick start<a href="#">  <span class="op-link-2"></span></a></h3>
+                        </div>
+        
+                        <div class="details">
+                            <h3 class="title" id="">Quick start<a href="#">  <span class="op-link-2"></span></a></h3>
+                        </div>
+                    </div>
+        
+                    <div id="line5" class="py_4 tabcontent">
+                        
+                            <h3>Components</h3>
+                            <p>Use Opacity’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states,
+                            and more.</p>
+                        <div class="details">
+                            <h4 class="title" id="Buttons">Buttons<a href="#Buttons">  <span class="op-link-2"></span></a></h4>
+                            
+                            <h5 class="mt-4">Button Filled :</h5>
+                            <div class="button_group d_f wrap">
+                                <button class="btn_primary">Button</button>
+                                <button class="btn_info">Button</button>
+                                <button class="btn_success">Button</button>
+                                <button class="btn_warning">Button</button>
+                                <button class="btn_danger">Button</button>
+                                <button class="btn_dark">Button</button>
+                                <button class="btn_light">Button</button>
+                            </div>
+        
+                            <h5 class="mt-4">Button Outline :</h5>
+                            <div class="d_f wrap button_group">
+                                <button class="btn_outline-primary">Button</button>
+                                <button class="btn_outline-info">Button</button>
+                                <button class="btn_outline-success">Button</button>
+                                <button class="btn_outline-warning">Button</button>
+                                <button class="btn_outline-danger">Button</button>
+                                <button class="btn_outline-dark">Button</button>
+                                <button class="btn_outline-light">Button</button>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4 class="title" id="Cards">Cards<a href="#Cards">  <span class="op-link-2"></span></a></h4>
+        
+                            <div class="o_grid">
+                                <div class="col_xs-12 col_md-6">
+                                    <div class="op_card">
+                                        <div class="card_img" >
+                                            <img class="cover" src="https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" >
+                                        </div>
+                                        <div class="card_content">
+                                            <h3>Hello There</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam obcaecati architecto.</p>
+                                            <button class="btn_success">View</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_md-6">
+                                    <div class="op_card">
+                                        <div class="card_img" >
+                                            <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="cover">
+                                        </div>
+                                        <div class="card_content">
+                                            <h3>Hello There</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam obcaecati architecto.</p>
+                                            <button class="btn_success">View</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12">
+                                    <div class="h4 tal my_3">Sourcecode(Slide) <span class="op-external-link"></span></div>
+                                    <iframe src="https://codesandbox.io/embed/boring-agnesi-oi96w?fontsize=14&hidenavigation=1&theme=dark"
+        style="width:100%; height:550px; border:0; border-radius: 4px; overflow:hidden;"
+        title="boring-agnesi-oi96w"
+        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4 class="title" id="Navbar">Navbar<a href="#Navbar">  <span class="op-link-2"></span></a></h4>
+                            <p>Opacity provides navbar using js.</p>
+                            <p>use this boilarplate for using this navbar.</p>
+                            <div class="navbar_option">
+                                <iframe src="https://codesandbox.io/embed/keen-browser-uw0zy?autoresize=1&fontsize=14&hidenavigation=1&theme=dark" class="w_100" style="height: 280px;" frameborder="0"></iframe>
+                            </div>
+                            <small class="d_b mt-4">Full Demo: <a href="https://uw0zy.csb.app/" target="_blank" rel="noopener noreferrer">Click here</a></small>                        
+                        </div>
+                    </div>
+        
+                    <div id="line6" class="py_4 tabcontent">
+                        <div class="details">
+                            <h3>Plugins & Other Services</h3>
+                            <p></p>
+                            
+                            <h4 class="title h5" id="Plugins&OtherServices">Plugins & Other Services<a href="#Plugins&OtherServices"> <span class="op-link-2"></span></a></h4>
+
+                            <div class="o_grid g_3">
+                                <div class="col_xs-12 col_md-4">
+                                    <div class="card rounded_4 p_4">
+                                        <div class="icon g_center bg_primary">
+                                            <span class="op-command"></span>
+                                        </div>
+                                        <h3>OpIcons. <a href="https://opicons.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="op-link"></span></a></h3>
+                                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also use our npm template repo to quickly generate a Bootstrap project via npm.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_md-4">
+                                    <div class="card rounded_4 p_4">
+                                        <div class="icon g_center bg_success">
+                                            <span class="op-settings"></span>
+                                        </div>
+                                        <h3>OpFilter <a href="http://" target="_blank" rel="noopener noreferrer"><span class="op-link"></span></a></h3>
+                                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also use our npm template repo to quickly generate a Bootstrap project via npm.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_md-4">
+                                    <div class="card rounded_4 p_4">
+                                        <div class="icon g_center bg_danger">
+                                            <span class="op-settings"></span>
+                                        </div>
+                                        <h3>Installation <a href="http://" target="_blank" rel="noopener noreferrer"><span class="op-link"></span></a></h3>
+                                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also use our npm template repo to quickly generate a Bootstrap project via npm.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_md-4">
+                                    <div class="card rounded_4 p_4">
+                                        <div class="icon g_center bg_info">
+                                            <span class="op-settings"></span>
+                                        </div>
+                                        <h3>Installation <a href="http://" target="_blank" rel="noopener noreferrer"><span class="op-link"></span></a></h3>
+                                        <p>Install Bootstrap’s source Sass and JavaScript files via npm, Composer, or Meteor. Package managed installs don’t include documentation or our full build scripts. You can also use our npm template repo to quickly generate a Bootstrap project via npm.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- <div class="o_grid ac_str">
+                                <div class="col_xs-12 col_sm-6 col_md-3">
+                                    <div class="card g_center tac rounded_3">
+                                        <a href="#" class="h4">Icons</a>
+                                        <p>Opacity also offers free icons for desigener.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_sm-6 col_md-3">
+                                    <div class="card g_center tac rounded_3">
+                                        <a href="#" class="h4">Op Modals</a>
+                                        <p>Opacity offers modern ui modal for modern website.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_sm-6 col_md-3">
+                                    <div class="card g_center tac rounded_3">
+                                        <a href="#" class="h4">OP Filter</a>
+                                        <p>Opacity offers Gallery filter for filterable gallery.</p>
+                                    </div>
+                                </div>
+                                <div class="col_xs-12 col_sm-6 col_md-3">
+                                    <div class="card g_center tac rounded_3">
+                                        <a href="#" class="h4">Icons</a>
+                                        <p>Opacity also offers free icons for desigener.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div id="line9" class="py_4 tabcontent">
+                        <div class="details">
+                            <h3>Recent Blogs</h3>
+                            <p>Latest & Example components available here. </p>
+                            <article class="blog_section py_3">
+                                <div class="o_grid">
+                                    <div class="col_xs-12 col_md-6 col_lg-3">
+                                        <div class="op_card">
+                                            <div class="card_img">
+                                                <img src="https://i.ytimg.com/vi/bV0_1-RYSqU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6EqYgDpzYCqdyGrmIn4zjHH0ssQ" alt="">
+                                            </div>
+                                            <div class="card_content">
+                                                <a href="http://" target="_blank" rel="noopener noreferrer" class="color_dark">Custom css checkbox</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <div class="modal_btn bg_success p_f b_0 r_0 m_4 p_2 rounded_3 z_9 pointer h3 color_light"><span class="op-twitch d_b"></span></div>
+
+    <div class="modal d_none z_12">
+        <div class="modal_close tar pointer"><span class="op-x d_ib h3 mb_1 color_dark"></span></div>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZiee-PmuUkEEo-mb3s7jOrAntW0YQ99w7k9Mu-5Pj_8fNJA/formResponse" target="_self" method="POST" class="madal_area">
+            <input type="text" placeholder="Name" name="entry.2005620554" class="rounded_2">
+            <textarea name="entry.839337160" id="" cols="30" rows="4" placeholder="Describe Issues.." class="my_1 rounded_2"></textarea>
+            <button type="submit" class="btn_success sm">Send</button>
+        </form>
+    </div>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="../src/js/index.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        showMenu('.nav_toggler','.navigation');
+
+
+        const showModal = (BtnId, modalId, CloseId) =>{
+    const ModalBtn = document.querySelector(BtnId),
+    ModalArea = document.querySelector(modalId),
+    CloseBtn = document.querySelector(CloseId);
+
+    if(BtnId && modalId){
+        ModalBtn.addEventListener('click', ()=>{
+            ModalArea.classList.remove("d_none")
+        })
+        CloseBtn.addEventListener('click', ()=>{
+            ModalArea.classList.add("d_none")
+        })
+    }
+};
+showModal('.modal_btn','.modal','.modal_close')
+    </script>
+</body>
+</html>

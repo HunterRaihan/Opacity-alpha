@@ -1,0 +1,172 @@
+@import '../../src/css/layout';
+//header
+
+
+
+//Footer
+footer {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            line-height: 1.8;
+            a {
+                color: var(--dark-color);
+                text-decoration: none;
+                opacity: .8;
+                font-size: 1.05rem;
+            }
+        }
+    }
+}
+
+//Documentation
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+    border-radius: .4rem;
+    background: rgba(0, 0, 0, 0.207);
+}
+
+::-webkit-scrollbar-thumb:hover  {
+    background: rgba(0, 0, 0, 0.507);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+    height: 55px;
+    width: 55px;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    border-radius: .175rem;
+    box-shadow: var(--shadow);
+}
+
+.details{
+    padding: 1.2rem 0 0 0;
+}
+.copy_btn{
+    color: var(--success-color);
+    font-size: 1.2rem;
+    cursor: crosshair;
+}
+
+.sticktotop{
+    position: sticky;
+    top: 14%;
+    left: 0;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    padding: .875rem 0 0 0;
+    font-size: clamp(1.25rem,3vw,1.5rem);
+    a{
+        opacity: .8;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+code{
+    font-size: 1rem;
+}
+
+
+pre{
+    border-radius: 10px;
+}
+//@at-root
+
+.card{
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.tabcontent {
+    display: none;
+    padding-left: .875rem;
+    padding-right: .875rem;
+    box-shadow: 0 8px 24px rgb(224, 221, 221);
+    animation: fadeEffect .51s;
+}
+.widget_tab {
+    padding: .875rem;
+    border-radius: .5rem;
+    color: var(--light);
+}
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .open{
+      display: block;
+  }
+
+
+  .side_bar {
+      position: relative;
+      .side_bar-main {
+          position: sticky;
+          top: 10vh;
+      }
+  }
+  .border > div{
+      border: 2px solid #d2d8ec;
+      padding: 2rem;
+      text-align: center;
+  }
+  mark {
+      margin: .25rem 0;
+  }
+  .side_bar-nav{
+    list-style: none;
+    .doc_link{
+        font-size: .9rem;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.685);
+        padding: .4rem;
+        border-left: 3px solid transparent;
+        margin: .3rem 0;
+        transition: border .3s;
+        display: inline-block;
+        cursor: pointer;
+        &.active,&:hover{
+            border-left: 3px solid var(--success-color);
+        }
+    }
+}
+
+
+
+.button_group > *{
+    margin: .25rem;
+}
+
+.modal {
+    width: 470px;
+    max-width: 100%;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    padding: 1rem;
+    border-radius: .4rem;
+    box-shadow: var(--shadow);
+    background: rgba(253, 253, 253, 0.041);
+    backdrop-filter: blur(10px);
+   input,textarea {
+       background: rgba(255, 255, 255, 0.589);
+       &::placeholder {
+           color: var(--dark-color);
+       }
+   }
+}
